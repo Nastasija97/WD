@@ -76,7 +76,74 @@ body,html{
 .nav-btn{
   font-weight: 700;
 }
+/* Socials */
+.socials{
+  position: absolute;
+  margin-top: 150px;
+  position: fixed;
 
+
+
+}
+.socials ul {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+.socials ul li{
+  position:relative;
+  list-style: none;
+  margin:15px;
+}
+.socials ul li a{
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+ justify-content: center;
+ align-items: center;
+ text-decoration: none;
+ color: whitesmoke;
+ font-size: 3.4vmin;
+ border-right: 1px solid rgba(225, 225, 225, 0.1);
+ border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+ box-shadow:0 5px 45px rgba(0,0,0,0.1) ;
+ backdrop-filter: blur(2px);
+ transition: 0.5s;
+overflow: hidden;
+}
+.socials ul li a:hover{
+  color: var(--violet);
+  transform: translateX(20px);
+  overflow: hidden;
+}
+.socials ul li a::before{
+  content: '';
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  height: 100%;
+  background: rgba(255,255,255,0.1);
+  transform: skewX(45deg) translateX(70px);
+  transition:0.5s;
+
+}
+.socials li a:hover::before{
+  transform: skewX(45deg) translateX(-80px);
+}
+
+
+
+
+
+
+
+
+
+/* header  */
 header{
   width: 100vw;
   height: 100vh;
@@ -220,6 +287,10 @@ p{
 
 .content-col{
   width: 40%;
+}
+.tours .line{
+  margin-right: 1px;
+
 }
 .tours .row .image-col{
   width: 60%;
