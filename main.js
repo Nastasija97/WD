@@ -5,7 +5,7 @@ menuBtn.addEventListener('click',()=>{
     navLinks.classList.toggle('mobile-menu')
 })
 
-var btnContainer=document.getElementById("nav-links");
+var btnContainer=document.querySelector("#nav-links");
 var buttons=btnContainer.getElementsByClassName("nav-btn");
 
 for(var i=0;i<buttons.length;i++){
