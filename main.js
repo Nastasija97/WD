@@ -8,10 +8,10 @@ menuBtn.addEventListener('click',()=>{
 var btnContainer=document.querySelector("#nav-links");
 var buttons=btnContainer.getElementsByClassName("nav-btn");
 
-for(var i=0;i<buttons.length;i++){
-    buttons[i].addEventListener("click",function(){
-        var current=document.getElementsByClassName("active");
-        current[0].className=current[0].className.replace("active","");
-        this.className+=" active";
-    });
-}
+// for(var i=0;i<buttons.length;i++){
+//     buttons[i].addEventListener("click",function(){
+//         var current=document.getElementsByClassName("active");
+//         current[0].className=current[0].className.replace("active","");
+//         this.className+=" active";
+//     });
+// }
