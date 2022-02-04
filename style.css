@@ -33,6 +33,7 @@ body,html{
  display: flex;
  align-items: center;
  text-align: center;
+ 
   
 }
 .logo h1{
@@ -47,8 +48,10 @@ body,html{
 
 /*NAVBAR SECTION*/
 .navbar{
+  
   display: flex;
   position:absolute;
+  
   top: 0;
   left: 0;
   width:100%;
@@ -60,6 +63,8 @@ body,html{
 .nav-links{
   display: flex;
   align-items: center;
+
+  
 
 }
 
@@ -99,22 +104,22 @@ body,html{
   position: relative;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 10px;
   display: flex;
  justify-content: center;
  align-items: center;
  text-decoration: none;
  color: whitesmoke;
  font-size: 3.4vmin;
- border-right: 1px solid rgba(225, 225, 225, 0.1);
- border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+ border-right: 1px solid rgba(225, 225, 225, 0.8);
+ border-bottom: 1px solid rgba(225, 225, 225, 0.8);
  box-shadow:0 5px 45px rgba(0,0,0,0.1) ;
  backdrop-filter: blur(2px);
  transition: 0.5s;
 overflow: hidden;
 }
 .socials ul li a:hover{
-  color: var(--violet);
+ 
   transform: translateX(20px);
   overflow: hidden;
 }

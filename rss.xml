@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+	<channel>
+		<title>CAMPERSCO</title>
+		<link>https://nastasija97.github.io/WD</link>
+		<description>Camping Society located in Serbia</description>
+		<language>en-us</language>
+		<copyright><![CDATA[ CAMPERSCO 2003 ]]></copyright>
+		<image>
+			<url>https://nastasija97.github.io/WD/assets/images/logo2.png</url>
+			<title>CAMPERSCO</title>
+			<link>https://nastasija97.github.io/WD</link>
+		</image>
+		<item>
+			<title>Join Our Team of Campers Today</title>
+			<link>https://nastasija97.github.io/WD/contact.html</link>
+			<pubDate>Fri, 4 Feb 2022 12:00:00 GMT</pubDate>
+			<author>Nastasija Perovic</author>
+			<category>Camping</category>
+			<description><![CDATA[ 
+			<h1>Join Our Team of Campers Today</h1>
+			CAMPERSCO is The Camping Society founded in 2003 with a purpose of bringing together adventurous people together to explore nature.
+			]]></description>
+		</item>
+	</channel>
+</rss>
