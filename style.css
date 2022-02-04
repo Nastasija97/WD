@@ -33,6 +33,7 @@ html {
 .logo h1 {
   color: whitesmoke;
   font-weight: 900;
+  margin-top: 20px;
 }
 
 .logo-png {
@@ -43,7 +44,7 @@ html {
 .navbar {
   display: flex;
   position: absolute;
-
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100%;
@@ -71,6 +72,7 @@ html {
   position: absolute;
   margin-top: 150px;
   position: fixed;
+  z-index: 9;
 }
 .socials ul {
   position: relative;
@@ -143,16 +145,27 @@ header {
   text-transform: uppercase;
 }
 .line {
-  width: 150px;
+  width: 200px;
   height: 4px;
   background: #1ed345;
   margin: 10px auto;
   border-radius: 5px;
 }
+.header-content h2 {
+  color: whitesmoke;
+
+  font-size: 3vmin;
+
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
 .header-content h1 {
+  color: whitesmoke;
+  text-shadow: 1px 1px var(--violet);
   font-size: 7vmin;
   margin-top: 50px;
   margin-bottom: 30px;
+
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
 .ctn {
   padding: 8px 15px;
@@ -204,9 +217,10 @@ section {
   margin-top: 50px;
 }
 h4 {
-  font-size: 3vmin;
+  font-size: 4vmin;
   color: var(--violet);
   margin: 20px auto;
+  text-align: center;
 }
 p {
   color: #7c7c7c;
@@ -311,7 +325,6 @@ h2 {
   font-weight: 800;
 }
 
-
 /* ANIMATIONS */
 
 img {
@@ -348,99 +361,95 @@ li a:hover {
 }
 /* Contact Page */
 
-.form{
+.form {
   margin: 0;
   width: 100%;
   height: 150vh;
   background: url("./assets/images/15.jpg") no-repeat center;
- background-size: cover;
- 
- /* filter: blur(8px);
+  background-size: cover;
+
+  /* filter: blur(8px);
  -webkit-filter: blur(8px); */
 }
-.form-container{
+.form-container {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 100%;
-  padding:70px 100px;
-z-index: 2;
+  padding: 70px 100px;
+  z-index: 2;
 }
-.form-container:after{
-  content: '';
+.form-container:after {
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  
-  
- 
 }
-.contact-box{
+.contact-box {
   margin-top: 80px;
   z-index: 3;
   max-width: 850px;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
   text-align: center;
   background-color: #fff;
   box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.1);
 }
-.left{
+.left {
   height: 100%;
   background: url("./assets/images/15.jpg") no-repeat center;
   background-size: cover;
 }
-.right{
-  padding:25px 40px;
+.right {
+  padding: 25px 40px;
 }
-h1,h2{
+h1,
+h2 {
   color: var(--violet);
   position: relative;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-.field{
+.field {
   width: 100%;
-  padding:0.5rem 1rem;
+  padding: 0.5rem 1rem;
   outline: none;
-  border:2px solid rgba(230,230,230,0.6);
+  border: 2px solid rgba(230, 230, 230, 0.6);
   font-size: 2vmin;
   margin-bottom: 20px;
-  transition: .3s;
+  transition: 0.3s;
   border-radius: 10px;
 }
-.field:hover{
+.field:hover {
   background: rgba(0, 0, 0, 0.1);
-
 }
-.field:focus{
+.field:focus {
   background-color: #fff;
-  border:2px solid var(--violet);
+  border: 2px solid var(--violet);
 }
-.area{
+.area {
   min-height: 150px;
-
 }
-.form-btn{
+.form-btn {
   border-radius: 20px;
   width: 100%;
-  padding:0.5rem 1rem;
+  padding: 0.5rem 1rem;
   font-size: 2.4vmin;
   background-color: #1ed345;
   cursor: pointer;
   outline: none;
-  border:none;
-  transform: .3s;
+  border: none;
+  transform: 0.3s;
   color: whitesmoke;
   font-weight: 600;
 }
-.btn:hover{
+.btn:hover {
   background-color: #1ed345;
 }
 
@@ -452,6 +461,7 @@ h1,h2{
   }
   .navbar {
     padding: 0;
+    z-index: 99;
   }
   .logo {
     position: absolute;
@@ -478,7 +488,7 @@ h1,h2{
   .nav-links li {
     margin: 30px auto;
   }
-  .socials ul li{
+  .socials ul li {
     width: 25px;
     height: 25px;
   }
@@ -526,22 +536,19 @@ h1,h2{
   }
 
   /* contact */
-  .contact-box h1{
+  .contact-box h1 {
     display: none;
   }
-  .contact-box .right{
+  .contact-box .right {
     height: auto;
   }
-  .contact-box .left{
+  .contact-box .left {
     display: none;
   }
-.contact-box{
-  
-  grid-template-columns: 1fr;
-}
-.left{
-height: 200px;
-}
-
-
+  .contact-box {
+    grid-template-columns: 1fr;
+  }
+  .left {
+    height: 200px;
+  }
 }
